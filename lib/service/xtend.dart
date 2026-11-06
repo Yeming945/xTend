@@ -614,9 +614,10 @@ class Xtend {
   }
 
   bool _didClickChangeMode(Gamepad gamepad) {
-    return (_prevGamepad!.buttons.start != gamepad.buttons.start ||
-            _prevGamepad!.buttons.back != gamepad.buttons.back) &&
-        (gamepad.buttons.start && gamepad.buttons.back);
+    // Mode switch hotkey: left stick click (LS) + right stick click (RS).
+    return (_prevGamepad!.buttons.leftThumb != gamepad.buttons.leftThumb ||
+            _prevGamepad!.buttons.rightThumb != gamepad.buttons.rightThumb) &&
+        (gamepad.buttons.leftThumb && gamepad.buttons.rightThumb);
   }
 
   XtendMode _nextXtendMode() {

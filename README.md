@@ -9,8 +9,8 @@
 
 ## Usage
 ### Switching modes
-To switch between modes, both **START** and **BACK** buttons have to be clicked at the same time
->  **START** and **BACK** buttons are located on the left and right of the Xbox logo button
+To switch between modes, press both **left stick click (LS)** and **right stick click (RS)** at the same time
+>  **LS** and **RS** are the switches under the two analogue sticks — push the stick straight down until it clicks
 
 There are 3 user-selectable modes:
 -  **Gamepad**
@@ -30,7 +30,8 @@ Doesn't respond to any controller input except for mode switch key combination
 | **B**               | Right mouse button                                                 |
 | **X**               | Browser back                                                       |
 | **Y**               | Browser forward                                                    |
-| **Left thumb**      | Win+D                                                              |
+| **Left thumb**      | — (reserved for mode switch)                                       |
+| **Right thumb**     | — (reserved for mode switch)                                       |
 | **Left trigger**    | Volume down                                                        |
 | **Right trigger**   | Volume up                                                          |
 | **Left shoulder**   | Alt                                                                |
@@ -47,7 +48,8 @@ On-screen keyboard is displayed in alphanumeric mode in 50% opacity.
 | **B**               | Backspace                                  |
 | **X**               | Enter                                      |
 | **Y**               | Toggle CapsLock                            |
-| **Left thumb**      | Switch keyboard type (keyboard redirect)   |
+| **Left thumb**      | — (reserved for mode switch)               |
+| **Right thumb**     | — (reserved for mode switch)               |
 | **Left trigger**    | Ctrl+C                                     |
 | **Right trigger**   | Ctrl+V                                     |
 | **Left shoulder**   | Alt                                        |

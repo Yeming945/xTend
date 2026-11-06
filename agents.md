@@ -35,7 +35,7 @@
   - Mode updates broadcast through `_modeStreamController`.
   - Updates to the injected `KeyboardInterface` (caps lock state, key presses).
 - **Capabilities**:
-  - Maintains current `XtendMode` (`mouse`, `keyboard`, `gamepad`, or `none`) and cycles modes when START+BACK are pressed simultaneously.
+  - Maintains current `XtendMode` (`mouse`, `keyboard`, `gamepad`, or `none`) and cycles modes when LS (left stick click) and RS (right stick click) are pressed simultaneously.
   - Applies configurable button/joystick mappings (`Config.gamepadMapping`) to convert controller deltas into OS events.
   - Implements acceleration curves for mouse movement and dead-zoning + directional logic for keyboard navigation.
   - Handles modifier chords (e.g., Ctrl+C) and layered joystick actions (scrolling, cursor movement).
@@ -114,7 +114,7 @@
 - Updating `config.json` allows end users to remap controller behaviour without rebuilding the app.
 
 ## Control Flow Highlights
-- **Mode switching**: On each gamepad sample, `_updateXtendMode` checks whether START and BACK transitioned to pressed simultaneously; if so, `_nextXtendMode` cycles modes and publishes the new mode.
+- **Mode switching**: On each gamepad sample, `_updateXtendMode` checks whether LS and RS transitioned to pressed simultaneously; if so, `_nextXtendMode` cycles modes and publishes the new mode. Both thumb clicks therefore default to `ButtonAction.none`.
 - **Mouse mode**:
   - Left joystick coordinates are converted to a non-linear speed curve for cursor movement.
   - Right joystick emits scroll events on both axes.

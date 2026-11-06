@@ -55,7 +55,8 @@ class GamepadMapping extends Equatable {
         dPadDown: ButtonAction.arrowDown,
         dPadLeft: ButtonAction.arrowLeft,
         dPadRight: ButtonAction.arrowRight,
-        leftThumb: ButtonAction.winD,
+        // LS + RS is the mode switch hotkey, so they must not fire an action.
+        leftThumb: ButtonAction.none,
         rightThumb: ButtonAction.none,
         leftShoulder: ButtonAction.alt,
         rightShoulder: ButtonAction.tab,
@@ -75,7 +76,8 @@ class GamepadMapping extends Equatable {
         dPadDown: ButtonAction.arrowDown,
         dPadLeft: ButtonAction.arrowLeft,
         dPadRight: ButtonAction.arrowRight,
-        leftThumb: ButtonAction.keyboardRedirect,
+        // LS + RS is the mode switch hotkey, so they must not fire an action.
+        leftThumb: ButtonAction.none,
         rightThumb: ButtonAction.none,
         leftShoulder: ButtonAction.alt,
         rightShoulder: ButtonAction.tab,
